@@ -17,3 +17,7 @@ $ sudo apt install mysql-server
 
 PHP
 $ sudo apt install php
+
+SSH server
+![image](https://github.com/sinistermirage/Web-Server/assets/148070039/cc33631c-10e8-46b0-ae5d-5f7686ab9b38)
+
