@@ -1,0 +1,90 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0F0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #0F0;
+}
+
+a {
+    color: #0F0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tool-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #111;
+    border: 1px solid #0F0;
+}
+
+.tool-container h2 {
+    color: #0F0;
+}
+
+.tool-output {
+    margin-top: 10px;
+}
+
+.catatan-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #111;
+    border: 1px solid #0F0;
+}
+
+.catatan-form h2 {
+    color: #0F0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #0F0;
+    border: 1px solid #0F0;
+}
+
+button {
+    padding: 10px;
+    background-color: #0F0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #090;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0F0;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #090;
+}
+
+/* Add any additional styles as needed */

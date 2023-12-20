@@ -1,0 +1,75 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0F0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #0F0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #0F0;
+    text-align: left;
+}
+
+th {
+    background-color: #0F0;
+    color: #000;
+}
+
+tr:nth-child(even) {
+    background-color: #111;
+}
+
+a {
+    color: #0F0;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #0F0;
+    border: 1px solid #0F0;
+}
+
+button {
+    padding: 10px;
+    background-color: #0F0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #090;
+}
+
+/* Add any additional styles as needed */

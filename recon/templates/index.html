@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style5.css') }}">
+    <title>Daftar Catatan</title>
+</head>
+<body>
+    <h1>Daftar Catatan</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nama Domain</th>
+            <th>Nama Tools</th>
+            <th>Catatan</th>
+            <th>Aksi</th>
+        </tr>
+        {% for catatan in catatan %}
+        <tr>
+            <td>{{ catatan[0] }}</td>   <!-- Form untuk menampilkan catatan -->
+            <td>{{ catatan[1] }}</td>
+            <td>{{ catatan[2] }}</td>
+            <td>{{ catatan[3] }}</td>
+            <td>     
+                <a href="{{ url_for('edit', id=catatan[0]) }}">Edit</a>    <!-- Form untuk edit input catatan -->
+                <a href="{{ url_for('hapus', id=catatan[0]) }}">Hapus</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <br>
+    <!-- Form untuk menambah catatan -->
+    <form method="POST" action="{{ url_for('tambah') }}">
+        <label for="nama_domain">Nama Domain:</label>
+        <input type="text" name="nama_domain" required>
+        <br>
+        <label for="nama_tools">Nama Tools:</label>
+        <input type="text" name="nama_tools" required>
+        <br>
+        <label for="catatan">Catatan:</label>
+        <textarea name="catatan" required></textarea>
+        <br>
+        <button type="submit">Tambah Catatan</button>
+    </form>
+</body>
+</html>
