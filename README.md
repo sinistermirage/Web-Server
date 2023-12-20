@@ -12,6 +12,8 @@ $ sudo apt install apache2
 
 MySQL(Database Server)
 $ sudo apt install mysql-server
+![image](https://github.com/sinistermirage/Web-Server/assets/148070039/81cfa296-d827-4130-a997-22ff02ed7fcd)
+
 
 PHP
 $ sudo apt install php
